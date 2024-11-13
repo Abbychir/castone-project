@@ -1,0 +1,23 @@
+Cost Estimate 
+
+Resources and estimated cost
+
+Amazon EC2 Instances
+
+UNIT is t2.micro (1 vCPU, 1GB RAM)	RATE $0.0116 per hour (on-demand) ESTIMATED MONTHLY COST	~$16.97 (2 instances)
+Amazon RDS (MySQL Database)
+
+UNITdb.t3.micro	RATE $0.020 per hour	ESTIMATED MONTHLY COST~$14.60
+RDS Storage	
+
+UNIT General Purpose SSD RATE $0.115 per GB per month ESTIMATED MONTHLY COST	~$2.30 (20GB)
+Application Load Balancer (ALB)
+
+UNIT Load Balancer Capacity Units (LCUs) RATE	$0.0225 per LCU-hour	ESTIMATED MONTHLY COST~$164.25 (100 LCUs)
+
+
+
+Breakdown
+EC2 Instances: 2 instances running for 730 hours/month.
+RDS Database: 1 db.t3.micro instance with 20GB SSD storage.
+ALB: 100 LCUs assumed based on medium traffic
